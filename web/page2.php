@@ -30,7 +30,7 @@
  </div>
  <div class="column side right">
         <picture>
-            <img src="images/mtn2.jpg" alt="Mountains"> 
+            <img src="images/mtnwalk.jpg" alt="Mountains"> 
              
         </picture>
  </div>
