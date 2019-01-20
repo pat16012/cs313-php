@@ -14,7 +14,7 @@
 <div class="row">
     <div class="column side left">
         <picture>
-            <img src="images/mtn1.jpg" alt="skiing"> 
+            <img src="images/mtn1.jpg" alt="Mountains"> 
               
         </picture>
     </div>
@@ -30,7 +30,7 @@
  </div>
  <div class="column side right">
         <picture>
-            <img src="images/mtn2.jpg" alt="snow boarding"> 
+            <img src="images/mtn2.jpg" alt="Mountains"> 
              
         </picture>
  </div>
