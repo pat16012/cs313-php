@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 140%;
+  background: #F8F8FF;
+}
+
+h1{
+    text-align: center;
+    background-color: cadetblue;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #300;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px ;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  div{
+      text-align: center;
+      font-weight: bold;
+  }
+
+  
