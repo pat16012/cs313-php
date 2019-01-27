@@ -9,7 +9,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-<?php include 'header.php';?>
+<?php include 'store_Header.php';?>
 <?php include 'register.php';?>
 </body>
 </html>

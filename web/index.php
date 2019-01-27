@@ -9,6 +9,7 @@
 </head>
 <body>
     <?php include 'header.php';?>
+    <div class="container">
     <div class="row">
     <div class="column side left">
         <picture>
@@ -34,6 +35,7 @@
             <p>All Photos Taken at Fernie Alpine Resort.</p>  
         </picture>
  </div>
+    </div>
  <div class="column side leftdown">
         <picture>
             <img src="images/lodge.jpg" alt="snow boarding"> 
