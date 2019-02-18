@@ -1,5 +1,12 @@
 <?php 
-require('dbaccess.php');
+require_once('dbaccess.php');
+$db = get_db();
+
+$query =  'SELECT id, first, last FROM userinfo';
+$stmt = $db->prepare($query);
+$stmt->execute();
+$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +20,20 @@ require('dbaccess.php');
 </head>
 <body>
 <?php include 'header.php';?>
+    <h1>Display Users</h1>
+    <ul>
+    <?php
+    foreach ($userinfos as $userinfo)
+    {
+        $id = $userinfo('id');
+        $first = $userinfo('first');
+        $last = $userinfo('last');
+
+        echo "<li><p>$id - $first - $last</p></li>";
+    }
+    ?>
+
+       
     
 </body>
 </html>
