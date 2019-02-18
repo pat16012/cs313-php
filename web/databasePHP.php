@@ -1,3 +1,7 @@
+<?php 
+require('dbaccess.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
