@@ -15,7 +15,7 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 // Connect to the database
 require("dbaccess.php");
 $db = get_db();
-$query = 'INSERT INTO userlogin(email, password) VALUES(:username, :password)';
+$query = 'INSERT INTO userlogin(username, password) VALUES(:username, :password)';
 $statement = $db->prepare($query);
 $statement->bindValue(':username', $username);
 // **********************************************

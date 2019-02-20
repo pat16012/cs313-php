@@ -31,9 +31,9 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 	// Connect to the DB
 	require("dbaccess.php");
 	$db = get_db();
-	$query = 'SELECT password FROM userlogin WHERE username=:email';
+	$query = 'SELECT password FROM login WHERE username=:username';
 	$statement = $db->prepare($query);
-	$statement->bindValue(':email', $username);
+	$statement->bindValue(':username', $username);
 	$result = $statement->execute();
 	if ($result)
 	{
