@@ -16,7 +16,7 @@ $db = get_db();
 <body>
 <?php include 'header.php';?>
     <h1>Display Users</h1>
-    <ul>
+    
     <?php 
 
     try{
@@ -37,8 +37,9 @@ catch (PDOException $ex)
     echo "Error with DB. Details: $ex";
     die();
 }
+
     ?>
-    </ul>
+    
     
    
 
