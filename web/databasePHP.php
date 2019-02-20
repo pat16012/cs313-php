@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once('dbaccess.php');
 $db = get_db();
 
@@ -23,7 +23,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <h1>Display Users</h1>
     <ul>
     <?php
-    foreach ($userinfos as $userinfo)
+    foreach ($userinfo as $userinfos)
     {
         $id = $userinfo('id');
         $first = $userinfo('first');
