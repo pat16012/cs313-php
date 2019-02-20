@@ -1,14 +1,14 @@
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  font-size: 140%;
-  background: lightgray;
+    font-size: 140%;
+    background: lightgray;
 }
 
-h1{
+h1 {
     text-align: center;
     background-color: cadetblue;
 }
@@ -16,76 +16,84 @@ h1{
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #333;
-    
-  }
-  
-  li {
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 16px ;
+    padding: 16px;
     text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+}
 
-  img {
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+img {
     width: 100%;
     height: auto;
     border: 1px solid black;
-  }
+}
 
-  .column {
-    float:left;
-  }
-  
-  /* Left column */
-  .column.side.left {
+.column {
+    float: left;
+}
+
+
+/* Left column */
+
+.column.side.left {
     width: 40%;
-    float:left; 
-    font-weight: bold;   
-  }
-  /* right column */
-  .column.side.right {
-    width: 39%;
-    float:right;
+    float: left;
     font-weight: bold;
-    
-  }
-  
-  /* Middle column */
-  .column.middle {
+}
+
+
+/* right column */
+
+.column.side.right {
+    width: 39%;
+    float: right;
+    font-weight: bold;
+}
+
+
+/* Middle column */
+
+.column.middle {
     width: 20%;
-    font-weight: bold; 
+    font-weight: bold;
     border: 5px solid black;
     padding: 4.3px;
     background-color: aliceblue;
-  }
+}
 
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  /* Left column */
-  .column.side.leftdown {
+
+/* Left column */
+
+.column.side.leftdown {
     width: 40%;
-    float:left;    
-  }
-  /* right column */
-  .column.side.rightdown {
-    width: 39%;
-    float:right;
-    
-  }
+    float: left;
+}
 
-  
+
+/* right column */
+
+.column.side.rightdown {
+    width: 39%;
+    float: right;
+}
