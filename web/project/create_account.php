@@ -1,4 +1,5 @@
 <?php
+require_once('dbaccess.php');
 $username = $_POST['txtUser'];
 $password = $_POST['txtPassword'];
 if (!isset($username) || $username == ""
