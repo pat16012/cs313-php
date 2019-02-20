@@ -13,7 +13,7 @@ $username = htmlspecialchars($username);
 // Get the hashed password.
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 // Connect to the database
-require("dbConnect.php");
+require("dbaccess.php");
 $db = get_db();
 $query = 'INSERT INTO userlogin(username, password) VALUES(:username, :password)';
 $statement = $db->prepare($query);
