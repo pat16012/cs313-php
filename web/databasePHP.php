@@ -2,10 +2,10 @@
 require_once('dbaccess.php');
 $db = get_db();
 
-$query =  'SELECT id, first, last FROM userinfo';
-$stmt = $db->prepare($query);
-$stmt->execute();
-$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//query =  'SELECT id, first, last FROM userinfo';
+//$stmt = $db->prepare($query);
+//$stmt->execute();
+//$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
