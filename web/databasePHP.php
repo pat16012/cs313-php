@@ -22,16 +22,18 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include 'header.php';?>
     <h1>Display Users</h1>
     <ul>
-    <?php
-    foreach ($users as $user)
+    <?php 
+    foreach ($db->query('SELECT id, first, last FROM userlogin') as $row)
     {
-        $id = $userinfo('id');
-        $first = $userinfo('first');
-        $last = $userinfo('last');
-
-        echo "<li><p>$id - $first - $last</p></li>";
+        echo 'ID: ' . $row['id'];
+        echo 'First: ' . $row['first'];
+        echo 'Last: ' . $row['last'];
+        echo '<br/>';
     }
     ?>
+    </ul>
+    
+   
 
        
     
