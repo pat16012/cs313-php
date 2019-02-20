@@ -23,7 +23,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <h1>Display Users</h1>
     <ul>
     <?php
-    foreach ($userinfo as $userinfos)
+    foreach ($users as $user)
     {
         $id = $userinfo('id');
         $first = $userinfo('first');
