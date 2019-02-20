@@ -1,11 +1,6 @@
 <?php
-require_once('dbaccess.php');
+require('dbaccess.php');
 $db = get_db();
-
-//query =  'SELECT id, first, last FROM userinfo';
-//$stmt = $db->prepare($query);
-//$stmt->execute();
-//$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -23,13 +18,25 @@ $db = get_db();
     <h1>Display Users</h1>
     <ul>
     <?php 
-    foreach ($db->query('SELECT id, first, last FROM userlogin') as $row)
+
+    try{
+    $statment = $db->prepare('SELECT id, first, last FROM userinfo');
+    $statment->execute();
+
+    while ($row = $statment->fetch(PDO::FETCH_ASSOC))
     {
-        echo 'ID: ' . $row['id'];
-        echo 'First: ' . $row['first'];
-        echo 'Last: ' . $row['last'];
-        echo '<br/>';
+        echo '<p>';
+		echo '<strong>' . $row['id'] . ' ' . $row['first'] . ' ' . $row['last'];
+		echo '<br />';
+		
     }
+
+}
+catch (PDOException $ex)
+{
+    echo "Error with DB. Details: $ex";
+    die();
+}
     ?>
     </ul>
     
