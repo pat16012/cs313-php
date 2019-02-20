@@ -10,11 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="jumbotron">
-    <div class="container text-center">
-        <h1>The Rock Shop</h1>
-        <p>Magic Rocks for your Home</p>
-    </div>
+
 </div>
 	<nav class="navbar navbar-inverse">
         <div class="container-fluid">
